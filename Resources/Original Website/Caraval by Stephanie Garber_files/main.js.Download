@@ -1,0 +1,22 @@
+function fireSwbxExcerpt() {
+      var pixelSrc = "https://prodege.go2cloud.org/GL19h";
+      var pixelElm = $("<img/>", {src : pixelSrc, width : 1, height : 1});
+      $(pixelElm).appendTo($("body"));
+      console.log ("SWBXexcerpt fired");
+    }
+
+
+var end_date    = "01/31/17"
+
+if(new Date() >= new Date(end_date))
+{   
+    console.log('Today is ' + Date() + ' which is after ' + end_date + ', updated CTA.')
+    $('aside h1').html('Order <br>Your <br>Copy');
+    $('aside h2').remove();
+    $('#swag').remove();
+}
+else {
+    console.log('Today is ' + Date() + ' which is before ' + end_date + ', did not update CTA.')
+    $('aside h1').html('Coming 1/31/17');
+    $('aside h2').html('Pre-Order Your Copy');
+}
