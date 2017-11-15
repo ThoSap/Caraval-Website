@@ -1,0 +1,253 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+    background: #000e14 url('../img/stars.png');
+    background: url('../img/stars.png'), -moz-linear-gradient(top, #000e14 0%, #000e15 21%, #00212b 49%, #003849 74%, #005775 100%);
+    background: url('../img/stars.png'), -webkit-linear-gradient(top, #000e14 0%, #000e15 21%, #00212b 49%, #003849 74%, #005775 100%);
+    background: url('../img/stars.png'), linear-gradient(to bottom, #000e14 0%, #000e15 21%, #00212b 49%, #003849 74%, #005775 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#000e14', endColorstr='#005775', GradientType=0);
+    background-attachment: fixed;
+    /* -webkit-font-smoothing: antialiased; */
+    font-family: 'Source Sans Pro', Futura, 'Trebuchet MS', Arial, sans-serif;
+    font-size: 12px;
+    color: #FFF;
+    font-weight: 300;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    line-height: 1em;
+}
+
+main {
+    margin: 0 auto;
+    background: url('../img/accent.svg') no-repeat center -15em;
+    background-size: 100em;   
+}
+
+header {
+    text-align: center;
+    margin: 1 auto 3em;
+    padding-top: 4.25em;
+}
+
+header h1 {
+    display: block;
+    font-size: 1em;
+    color: transparent;
+    text-indent: -9999999px;
+    width: 44em;
+    padding-bottom: 18%;
+    background: url('../img/caraval.svg') no-repeat top center;
+    margin: auto;
+}
+
+header h2 {
+    font-size: 4em;
+    font-weight: 300;
+    letter-spacing: .2em;
+    margin: 0 auto .75em;
+    padding-bottom: 3%;
+}
+
+img.bookcover {
+    display: block;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.bg--turquoise {
+  background: #1abc9c;
+}
+
+.bg--green-sea {
+  background: #16a085;
+}
+
+.bg--emerald {
+  background: #2ecc71;
+}
+
+.bg--nephrtis {
+  background: #27ae60;
+}
+
+.bg--peter-river {
+  background: #3498db;
+}
+
+.bg--belize-hole {
+  background: #2980b9;
+}
+
+.bg--midnight-blu {
+  background: #2c3e50;
+}
+
+.bg--midnight-blu {
+  background: #2c3e50;
+}
+
+.bg--amethyst {
+  background: #9b59b6;
+}
+
+.bg--wisteria {
+  background: #8e44ad;
+}
+
+.bg--sun-flower {
+  background: #f1c40f;
+}
+
+.bg--orange {
+  background: #f39c12;
+}
+
+.bg--pumpkin {
+  background: #d35400;
+}
+
+.bg--carrot {
+  background: #e67e22;
+}
+
+.bg--pumpkin {
+  background: #d35400;
+}
+
+.bg--alizarin {
+  background: #e74c3c;
+}
+
+.bg--pomegranate {
+  background: #c0392b;
+}
+
+.bg--clouds {
+  background: #ecf0f1;
+}
+
+.bg--silver {
+  background: #bdc3c7;
+}
+
+.bg--concrete {
+  background: #95a5a6;
+}
+
+.bg--asbestos {
+  background: #7f8c8d;
+}
+
+.bg--dark {
+  background: #222222;
+}
+
+.bg--dark_light {
+  background: #393433;
+    opacity: 
+}
+
+.wrapper {
+  transition: background .5s ease;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.short {
+  height: 33.33333vh;
+}
+
+.title {
+  white-space: nowrap;
+  font-weight: 100;
+  font-size: 4vw;
+  color: #ecf0f1;
+}
+
+.title a {
+  color: inherit;
+}
+
+/*#app
+{
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0
+}
+
+#app.homepage .page
+{
+    padding-top:0 !important
+}
+
+.scroll-container
+{
+    width:100%;
+    height:100%;
+    position:absolute;
+    overflow:auto;
+    /* -webkit-overflow-scrolling:touch;
+    left:0;
+    top:0
+}
+
+.scroll-container::after
+{
+    clear:both;
+    content:"";
+    display:table
+}
+.scroll-container.showing-modal{overflow:hidden}
+
+.page{padding-top:41px}
+
+@media screen and (min-width: 960px) {
+    .page {
+        padding-top: 0
+    }
+}
+
+.page.loading {
+    height: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex
+}
+
+@media screen and (min-width: 630px)
+{
+    .page.loading
+    {
+        height: calc(100% - 75px)
+    }
+}
+
+@media screen and (min-width: 960px)
+{
+    .page.loading {
+        height: calc(100% - 157px)
+    }
+}
+
+.container
+{
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 10px
+}*/
