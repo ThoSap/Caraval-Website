@@ -1,2 +1,0 @@
-Die Webseite wurde von Grund auf von mir selbst Designt, d.h. es wurde kein Template (Vorlage) oder CMS benutzt.
-Natürlich habe ich mir Technologien zur Hilfe bezogen, diese sind am Footer der Webseite aufgelistet und ordnungsgemäß verlinkt.
