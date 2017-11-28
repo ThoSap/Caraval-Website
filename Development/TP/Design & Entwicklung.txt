@@ -1,0 +1,9 @@
+Um dieses Projet zu realisieren habe ich das erweiterte Wasserfallmodell (mit Rücksprung) gewählt, weil:
+
+	- Das Projekt ist ein Ein-Mann Projekt
+	- Erweiterung --> Es macht sinn das die Webseite mit rücksprüngen entwickelt wird, weil ich noch nie eine komplette Webseite entwickelt habe und ich auf schwierigkeiten und Bugs treten werde
+	- Das Wasserfallmodell bietet klare abgrenzugen der Entwicklungsphasen, d.h. für mich Abwechslung
+	- Genaue Abschätzung von Kosten und Umfang des Projektes
+	- Es ist einfach und verständlich
+	- Viele Aufgaben die das Wasserfallmodell beinhaltet muss ich bereits in PM machen
+	- Durch die Erweiterung sind im meinem Fall die Tests jeder "Sektion" möglich, die meine Webseite beinhaltet

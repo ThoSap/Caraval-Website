@@ -1,69 +1,475 @@
 <!DOCTYPE html>
 <html lang="en-GB">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
-        
-        <link rel="icon" href="static/img/favicon.jpg">
-        <link rel="stylesheet" href="static/css/style.css">
-        
-        
-        <title>Caraval by Thomas Sapelza</title>
-        <meta name="description" content="A interactive Website presenting the book Caraval by Stephanie Garber.">
-    </head>
-    <body>
-        <main>
-            <header>
-                <h1>Caraval</h1>
-                <h2>&nbsp;Stephanie Garber</h2>
-            </header>
-            <figure>
-                <img class="bookcover" src="static/img/Caraval_Bookshot.gif" alt="Caraval">
-            </figure>
-        </main>
-        <div class="wrapper">
-            <div class="section" data-background-color="#f1c40f">
-                <h1>Test</h1>
-            </div>
-            <div class="section" data-background-color="#16a085">
-                <h1>Test</h1>
-            </div> 
-            <div class="section" data-background-color="#2c3e50">
-                <h1>Test</h1>
-            </div> 
-            <div class="section" data-background-color="#e67e22">
-                <h1>Test</h1>
-            </div> 
-            <div class="section" data-background-color="#c0392b">
-                <h1>Test</h1>
-            </div> 
-        </div>
-        
-        <script src="static/js/jquery-3.2.1.min.js"></script>
-        <script src="static/js/in-view.min.js"></script>
-        <script src="static/js/script.js"></script>
-    </body>
+	<head>
+		<!-- Important Metadata for the browser -->
+		<meta charset="utf-8">
+		<link rel="canonical" href="http://ubuntuserver/~stSapTho/">
+		<meta name="language" content="en-GB">
+		<meta name="viewport" id="viewport" content="width=device-width,initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		
+		<!-- Look and feel (UX/UI) -->
+		<link rel="icon" href="favicon.ico">
+		<link type="text/css" rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link type="text/css" rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Lobster|Lobster+Two|Monoton">
+		<link type="text/css" rel="stylesheet" href="static/css/colors.css"/>
+		<link type="text/css" rel="stylesheet" href="static/css/materialicons.css"/>
+		<link type="text/css" rel="stylesheet" href="static/css/floatingActionButton.css">
+		<link type="text/css" rel="stylesheet" href="static/css/slider.css">
+		<link type="text/css" rel="stylesheet" href="static/css/pageFooter.css"/>
+		<link type="text/css" rel="stylesheet" href="static/css/style.css">
+		
+		<!-- Scripts (Framework/Library) -->
+		<script type="text/javascript" charset="utf-8" src="static/js/lib/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="static/js/lib/in-view.min.js"></script>
+		
+		<!-- General Metadata -->
+		<title>Caraval by Thomas Sapelza</title>
+		<meta name="description" content="A interactive Website presenting the book Caraval by Stephanie Garber made by Thomas Sapelza">
+		<meta name="keywords" content="caraval, legendary, author, plot, main characters, main topics, characteristics, reviews, young adult, books, writer">
+		<meta name="subject" content="In depth book presentation of Caraval written by Stephanie Garber">
+		<meta name="author" content="Thomas Sapelza, sapelza.thomas@gmail.com">
+		<meta name="reply-to" content="sapelza.thomas@gmail.com">
+		<meta name="Classification" content="07540"> <!-- ***** Books and Literature ***** -->
+		<meta name="Date" content="28/11/2017">
+		
+		<!-- The Open Graph protocol Metadata -->
+		<meta property="og:title" content="Caraval">
+		<meta property="og:site_name" content="Caraval by Thomas Sapelza">
+		<meta property="og:url" content="/index.html">
+		<meta property="og:locale" content="en_GB">
+		<meta property="og:image" content="/static/img/Caraval_Bookshot.gif">
+		<meta property="og:email" content="sapelza.thomas@gmail.com">
+		<meta property="og:description" content="A interactive Website presenting the book Caraval by Stephanie Garber made by Thomas Sapelza">
+		<meta property="og:type" content="book">
+		<meta property="book:author" content="Stephanie Garber, stephanie@stephaniegarberauthor.com">
+		<meta property="book:isbn" content="9781250095251">
+		<meta property="book:release_date " content="2017-01-31">
+	</head>
+	<body>
+		<main>
+			<!-- ### HEADER ### -->
+			<header>
+				<h1>Caraval</h1>
+				<h2>&nbsp;Stephanie Garber</h2>
+				<a href="index.html" class="caraval">
+					<div class="star star-01 white"></div>
+					<div class="star star-02 green"></div>
+					<div class="star star-03 yellow"></div>
+					<div class="star star-04 white"></div>
+					<div class="star star-05 red"></div>
+					<div class="star star-06 green"></div>
+					<div class="star star-07 purple"></div>
+					<div class="star star-08 red"></div>
+					<div class="star star-09 yellow"></div>
+					<div class="star star-10 purple"></div>
+					<div class="star star-11 red"></div>
+					<div class="star star-12 green"></div>
+					<div class="star star-13 green"></div>
+					<div class="star star-14 yellow"></div>
+					<div class="star star-15 red"></div>
+				</a>
+			</header>
+		</main>
+		<!-- ### HOMEPAGE MENU ### -->
+		<div class="homepage_menu">
+			<div class="link-container">
+				<div class="site-links" id="Home">
+					<a href="index.html" class="LinkWrapper">
+						<div class="BookImage">
+					</div>
+					</a>
+					<a href="#Author" class="green circle-icon Author">
+						<div class="icon"></div>
+						The author
+					</a>
+					<a href="#Plot" class="purple circle-icon Plot">
+						<div class="icon"></div>
+						The plot
+					</a>
+					<a href="#MainCharacters" class="pink circle-icon MainCharacters">
+						<div class="icon"></div>
+						The main characters
+					</a>
+					<a href="#MainTopics" class="blue circle-icon MainTopics">
+						<div class="icon"></div>
+						The Main topics
+					</a>
+					<a href="#Characteristics" class="green circle-icon Characteristics">
+						<div class="icon"></div>
+						The setting of time and place
+					</a>
+					<a href="#Characteristics2" class="orange circle-icon Characteristics2">
+						<div class="icon"></div>
+						The genre and linguistic aspects
+					</a>
+					<a href="#Reviews" class="yellow circle-icon Reviews">
+						<div class="icon"></div>
+						Reviews
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<!-- ### SECTIONS ### -->
+		<div class="section_wrapper">
+			<div class="fixed-action-btn" style="bottom: 40px; right: 40px;">
+				<a class="btn-floating pulse btn-large red-bg" href="#Home">
+					<i class="material-icons">home</i>
+				</a>
+			</div>
+			<!-- AUTHOR -->
+			<div id="section_author" class="section" section-background-color="#2c3e50">
+				<h1 id="Author">&nbsp;</h1>
+				<h1>About the Author</h1>
+				<div class="social-media-links">
+					<div class="author_img"></div>
+					<a class="btn facebook" target="_blank" href="https://www.facebook.com/StephanieGarber.Author">
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+					</a>
+					<a class="btn twitter" target="_blank" href="https://twitter.com/SGarberGirl">
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+					</a>
+					<a class="btn instagram" target="_blank" href="https://www.instagram.com/stephanie_garber/">
+						<i class="fa fa-instagram" aria-hidden="true"></i>
+					</a>
+					<a class="btn pinterest" target="_blank" href="https://www.pinterest.com/stephaniegarber/">
+						<i class="fa fa-pinterest" aria-hidden="true"></i>
+					</a>
+					<a class="btn glide-g" target="_blank" href="https://www.goodreads.com/author/show/14137787.Stephanie_Garber">
+						<i class="fa fa-glide-g" aria-hidden="true"></i>
+					</a>
+					<a class="btn envelope" target="_blank" href="mailto:stephanie@stephaniegarberauthor.com">
+						<i class="fa fa-envelope" aria-hidden="true"></i>
+					</a>
+				</div>
+				<p>
+					This is <strong class="red-text">Stephanie Garber</strong>.
+					<br>
+					When she's not writing, she teaches creative writing at a private college in Northern California, where she's been known to turn assignments into games and take students on field trips that involve book signings.
+					<br><br>
+					Initially, when she didn't wrote books she worked as a barista, a waitress, a bartender, a customer service representative for an energy consulting company, and as a sales girl at Bath and Bodyworks to help pay her bills during college, grad school, and the breaks in between.
+					<br><br>
+					She also spent years working with youth. She worked as a counselor at space themed summer camp, volunteered at a school for deaf children in Mexico, and had taken multiple groups of college students overseas to spend their winter vacations serving at youth hostels in Amsterdam. But out of everything that she's done, writing young adult novels has been her favorite job.
+					<br><br>
+					Her debut fantasy novel, <strong class="red-text">Caraval</strong> is out since 01/31/2017.
+					<br>
+					<strong class="red-text">Caraval</strong> has sold in thirty foreign territories, was the New York Times bestseller for <strong>fifteen</strong> consecutive weeks, the UK's Sundays Times bestseller and also the movie rights were already picked by <em>Twentieth Century Fox</em>.
+					<br><br>
+					Stephanie is currently on the sequel to Caraval called Legendary.
+					<br>
+					The sequel will be puplished on May 29, 2018.
+				</p>
+				<p>&nbsp;</p>
+				
+			</div>
+			<!-- PLOT -->
+			<div id="section_plot" class="section" section-background-color="#16a085">
+				<h1 id="Plot">&nbsp;</h1>
+				<h1>The plot</h1>
+				<div class="part1">
+					<img class="boatimg" src="static/img/section/Plot/boat.gif" alt="A moving boat">
+					<p>
+						<strong class="black-text">
+							"Whatever you’ve heard about Caraval, it doesn’t compare to the reality. It’s more than just a game or a performance. It’s the closest you’ll ever find to magic in this world . . ."
+						</strong>
+						<br>
+						(Caraval Page 9)
+						<br><br>
+						Scarlett has never left the tiny island <i>Conquered Isle of Trisda</i> where she and her beloved sister, Tella, live with their powerful, and cruel, father. Now Scarlett's father has arranged a marriage for her, and Scarlett thinks her dreams of seeing Caraval, the far-away, once-a-year performance where the audience participates in the show, are over.
+						<br><br>
+						But this year, Scarlett's long-dreamt of invitation of Caraval Master Legend finally arrives. With the help of a mysterious sailor named Julian, Tella whisks Scarlett away to the show.
+					</p>
+				</div>
+				<div class="part2">
+					<img class="island" src="static/img/section/Plot/snow_island.jpg" alt="A island covered in snow">
+					<p>
+						<strong class="black-text">
+							„Dreams that come true can be beutiful, but they can also turn into nightmares when people won't wake up.“
+						</strong>
+						<br>
+						(Caraval Page 77)
+						<br><br>
+						Scarlett awakes in a raft with Julian. He says Donatella will be on the island with them. She made it look like Scarlett was kidnapped so she can still marry her Count.
+						When they get on the private island <i>Isla de los Sueños</i> of Caraval Master Legend it is freezing cold, snow everywhere.
+						The only thing open in town is a magical clock shop. They find clothes, food, and a note to Scarlett from Legend.
+						A man opens a portal in one of the clocks, a shortcut into Caraval. Julian tells Scarlett not everyone in Caraval is what they seem and won’t take it.
+						<br><br>
+						Only, as soon as they arrive, Tella is kidnapped by Caraval's mastermind organizer, Legend. It turns out that this season's Caraval revolves around Tella, and whoever finds her first is the winner.
+						<br><br>
+						Scarlett has been told that everything that happens during Caraval is only an elaborate performance. But she nevertheless she enters in a game of love, heartbreak, and magic with the other players in the game. And whether Caraval is real or not, she must find Tella before the five nights of the game are over, a dangerous domino effect of consequences is set off, and her sister disappears forever.
+					</p>
+				</div>
+			</div>
+			<!-- CHARACTERS -->
+			<div id="section_mainCharacters" class="section" section-background-color="#f1c40f">
+				<h1 id="MainCharacters">&nbsp;</h1>
+				<h1>The main characters</h1>
+				<div class="slider-content slider-display-container" style="margin-bottom: 100px">
+					<div class="slider-display-container characterSlides">
+						<img src="static/img/section/MainCharacters/scarlett.jpg" style="height: 700px" alt="Scarlett Dragna">
+						<div class="slider-display-bottomright slider-large slider-container slider-padding-16 slider-white">
+							This is Scarlett Dragna, the main protagonist of the book. She has grown up with stories of Caraval, told by her nana, and has always wondered from afar and the magic of Caraval.
+							In the start of the book, Scarlett is distrustful of most people, as a result of her fathers abuse to her and her sister. She thinks everything through, and often does not take chances. 
+							She is the older sister of Donatella, and is fiercely protective of her.
+						</div>
+					</div>
+					<div class="slider-display-container characterSlides">
+						<img src="static/img/section/MainCharacters/donatella_scarlett.jpg" style="height: 700px" alt="Donatella and Scarlett Dragna">
+						<div class="slider-display-topright slider-large slider-container slider-padding-16 slider-green">
+							On the left you can see Donatella Dragna, also known as Tella.
+							Unlike Scarlett, Tella is impulsive, reckless and wild, and has a lust for danger and adventure. This is the main reason for Scarlett being so protective of her, as she knows she doesn't always think things through.
+						</div>
+					</div>
+					<div class="slider-display-container characterSlides">
+						<img src="static/img/section/MainCharacters/julian.jpg" style="height: 700px" alt="A handsome sailor, Julian Marrero">
+						<div class="slider-display-bottomright slider-large slider-container slider-padding-16 slider-black">
+							This is Julian Marrero, a sailor from the Southern Empire. He's tall and handsome and of course is drawing almost every woman's attention. He had a secret for a long time until Scarlett discovered it, he already played in Caraval before. At the end we find out that Julian is the brother of Caraval Master Legend.
+						</div>
+					</div>
+					<div class="slider-display-container characterSlides">
+						<img src="static/img/section/MainCharacters/dragna.jpg" style="height: 700px" alt="Governor Marcello Dragna">
+						<div class="slider-display-topright slider-large slider-container slider-padding-16 slider-black">
+							This is the Governor Marcello Dragna from the Conquered Isle of Trisda. He is the father of Scarlett and Donatella.
+							He has a huge fortune because of his rum trade and other black market dealings, but because Trisda was one of the Conquered Isles, he lacked power and respect he disred from other regents and nobles of of the Meridian Empire.
+							Because of this Dragna arranged a marriage between Scarlett and a count of a noble family, that would finally grant their own some respectability and would give him more power as well.
+						</div>
+					</div>
+					<button class="slider-button slider-display-left slider-red" onclick="plusDivs(-1, 'characters');">
+						<i class="material-icons">arrow_back</i>
+					</button>
+					<button class="slider-button slider-display-right slider-red" onclick="plusDivs(1, 'characters');">
+						<i class="material-icons">arrow_forward</i>
+					</button>
+				</div>
+			</div>
+			<!-- MAIN TOPCIS -->
+			<div id="section_mainTopics"  class="section" section-background-color="#e67e22">
+				<h1 id="MainTopics">&nbsp;</h1>
+				<h1>The main topics</h1>
+				<div class="mainTopics-Magic">
+					<img class="magic1" src="static/img/section/MainTopics/magic/ariel-lustre-313362.jpg" alt="Magic 1">
+					<h2 class="green-text">Magic</h2>
+					<p>
+						Magic is a big topic in this book.
+						<br><br>
+						Stephanie Garber manages to authentically represent magical elements.
+					</p>
+					<img class="magic2" src="static/img/section/MainTopics/magic/xan-griffin-419096.jpg" alt="Magic 2">
+				</div>
+				<div class="mainTopics-Adventure">
+					<img class="adventure1" src="static/img/section/MainTopics/adventure/andre-benz-290002.jpg" alt="Adventure 1">
+					<h2 class="blue-text">Adventure</h2>
+					<p>
+						Adventure and Fiction takes also a big piece of the topic pie.
+						<br><br>
+						Unbelievable can happen.
+					</p>
+					<img class="adventure2" src="static/img/section/MainTopics/adventure/jonas-verstuyft-352713.jpg" alt="Adventure 2">
+				</div>
+				<div class="mainTopics-Love">
+					<img class="love1" src="static/img/section/MainTopics/love/bart-larue-314562.jpg" alt="Love 1">
+					<h2 class="red-text">Love</h2>
+					<p>
+						Truly a game of love
+					</p>
+					<img class="love2" src="static/img/section/MainTopics/love/everton-vila-140207.jpg" alt="Love 2">
+				</div>
+			</div>
+			<!-- CHARACTERISTICS (The settings of time and place) -->
+			<div id="section_mainCharacteristics" class="section" section-background-color="#8e44ad">
+				<h1 id="Characteristics">&nbsp;</h1>
+				<h1>The settings of time and place</h1>
+				<div class="time">
+					<img class="clock" src="static/img/section/Characteristics/fabrizio-verrecchia-180315.jpg" alt="Clock">
+					<p class="time-text">
+						<strong>Caraval</strong> takes the reader into a historically fantastic setting, a world reminiscent of the 18th century.
+					</p>
+				</div>
+				<div class="place">
+					<img class="town" src="static/img/section/Characteristics/town.jpg" alt="A lightened up town">
+					<p class="place-text">
+						<strong>Caraval</strong> takes place in a fictional world.
+						<br>
+						The Conquered Isle of Trisda is part of the Meridian Empire.
+						<br>
+						<i>Isla de los Sueños</i> instead is a private island of the Caraval Master Legend and is outside of the Meridian Empire.
+					</p>
+				</div>
+			</div>
+			<!-- CHARACTERISTICS2 (The genre and linguistic aspects) -->
+			<div id="section_mainCharacteristics2" class="section" section-background-color="#16a085">
+				<h1 id="Characteristics2">&nbsp;</h1>
+				<h1>The genre and linguistic aspects</h1>
+				<div class="genre">
+					<img class="fiction" src="static/img/section/Characteristics2/efe-kurnaz-315384.jpg" alt="Fiction">
+					<p class="genre-text">
+						Fantasy Fiction
+					</p>
+				</div>
+				<div class="book">
+					<img class="legendary" src="static/img/section/Characteristics2/legendary.jpg" alt="Legendary">
+					<p class="legendary-text">
+						If you want to read more Fantasy Fiction books then wait for release of <i>The Magical Sequel</i> to <strong>Caraval</strong>
+						<br>
+						<strong class="legendary-header yellow-text text-darken-1">
+							Legendary
+						</strong>
+					</p>
+				</div>
+				<div class="language">
+					<img class="languages" src="static/img/section/Characteristics2/soner-eker-255476.jpg" alt="Legendary">
+					<p class="language-text">
+						Garber describes her world, her carnival, with beautiful words and manages to create a picture in front of the reader's mind, and to stimulate the imagination.
+						<br><br>
+						She uses a elevated language, nevertheless the book is very pleasant to read :)
+					</p>
+				</div>
+			</div>
+			<!-- REVIEWS -->
+			<div id="section_reviews" class="section" section-background-color="#ff9800">
+				<h1 id="Reviews">&nbsp;</h1>
+				<img class="header-reviews" src="static/img/section/Reviews/header-reviews.jpg" alt="Reviews">
+				<div class="slider-content slider-display-container">
+					<div class="slider-display-container reviewSlides">
+						<h2>My Review</h2>
+						<p>
+							Caraval was very pleasing to read, even if it took rather long for me because I almost never (sadly) read a book in english.
+							<br>
+							I must say Stephanie managed to make a very fascinating book with her unique and lively writing style, no wonders that it is a bestseller.
+							<br>
+							I'm already wating for the release of Legendary next year :P
+						</p>
+					</div>
+					<div class="slider-display-container reviewSlides">
+						<h2>Common Sense Media</h2>
+						<p>
+							Don't let the magical island setting fool you -- there's nothing laid back about this absorbing tale that's part smoldering forbidden romance, part rescue mission. Yes, it's set on a fantasy island, one readers would probably love to linger on if first-time author Stephanie Garber would let them. Garber doesn't linger on the details of world building -- or even let the characters sit down for a meal (do they ever eat?). Still, the fast pace does have the advantage of keeping readers fully immersed in the mystery as much as the main character, Scarlett. What's real? Who are the performers and who are the other players? Why is Scarlett's sister the one kidnapped, the one tied to the prize? How much danger is she really in?
+							<br><br>
+							Caraval is a zip-through read once you hit the halfway point, with more than a few eye-opening surprises at the end.
+						</p>
+					</div>
+					<div class="slider-display-container reviewSlides">
+						<h2>Entertainment Weekly</h2>
+						<p>
+							The Hunger Games meets The Night Circus.
+							<br><br>
+							<strong>Grade: A-</strong>
+						</p>
+					</div>
+					<div class="slider-display-container reviewSlides">
+						<h2>USA Today</h2>
+						<p>
+							Impressive, original, wondrous.
+						</p>
+					</div>
+					<div class="slider-display-container reviewSlides">
+						<h2>US Weekly</h2>
+						<p>
+							Spellbinding.
+						</p>
+					</div>
+					<div class="slider-display-container reviewSlides">
+						<h2>Publishers Weekly, starred review</h2>
+						<p>
+							Magnificent.
+						</p>
+					</div>
+					<div class="slider-display-container reviewSlides">
+						<h2>Sabaa Tahir, author of An Ember in the Ashes</h2>
+						<p>
+							I lost myself in this world.
+						</p>
+					</div>
+					<div class="slider-display-container reviewSlides">
+						<h2>Renée Ahdieh, author of The Wrath and the Dawn</h2>
+						<p>
+							Beautifully written.
+						</p>
+					</div>
+					<div class="slider-display-container reviewSlides">
+						<h2>Marie Rutkoski, author of The Winner’s Curse</h2>
+						<p>
+							Shimmers with magic.
+						</p>
+					</div>
+					<div class="slider-display-container reviewSlides">
+						<h2>Kiersten White, author of And I Darken</h2>
+						<p>
+							Darkly enchanting.
+						</p>
+					</div>
+					<div class="slider-display-container reviewSlides">
+						<h2>Roshani Chokshi, author of The Star-Touched Queen</h2>
+						<p>
+							Decadent.
+						</p>
+					</div>
+					<div class="slider-display-container reviewSlides">
+						<h2>Stacey Lee, author of Outrun the Moon</h2>
+						<p>
+							Like stepping into a living dream.
+						</p>
+					</div>
+					<div class="slider-display-container reviewSlides">
+						<h2>Kirkus Reviews</h2>
+						<p>
+							Destined to capture imaginations.
+						</p>
+					</div>
+					<div class="slider-display-container reviewSlides">
+						<h2>School Library Journal</h2>
+						<p>
+							Ideal for fans of The Night Circus, Stardust, and The Hunger Games.
+						</p>
+					</div>
+					<button class="slider-button slider-display-left slider-black" onclick="plusDivs(-1, 'reviews');">
+						<i class="material-icons">arrow_back</i>
+					</button>
+					<button class="slider-button slider-display-right slider-black" onclick="plusDivs(1, 'reviews');">
+						<i class="material-icons">arrow_forward</i>
+					</button>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Main Website script -->
+		<script type="text/javascript" charset="utf-8" src="static/js/script.js"></script>
+	</body>
+	<!-- ### FOOTER ### -->
+	<footer class="page-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h2 id="footer-header" class="materialize-red-text text-darken-3">Caraval</h2>
+					<p id="footer-project-decription" class="purple-text">
+						Caraval project made by Thomas Sapelza, class 5AT of the school J. PH. Fallmerayer in collaboration with the school subjects English, Informatics, Project Management and Technology and Planning.
+						<br><br>
+						<span id="footer-images-copyright-text">
+							All images used are either licensed under Creative Commons or are from the royalty free website
+							<a id="link-unsplash" class="red-text text-lighten-1" target="_blank" href="https://unsplash.com/">"Unsplash: Beautiful, free photos."</a>
+						</span>
+					</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<h3 id="technology-header" class="indigo-text">Used technologies</h3>
+					<ul>
+						<li><a id="link-material-design" class="purple-text text-lighten-1" target="_blank" href="https://material.io/">Material Design</a></li>
+						<li><a id="link-jQuery" class="blue-text" target="_blank" href="https://jquery.com/" >jQuery</a></li>
+						<li><a id="link-in-viewjs" class="materialize-red-text text-lighten-1" target="_blank" href="https://camwiegert.github.io/in-view/">in-view.js</a></li>
+						<li><a id="link-Flat-UI-Colors" class="yellow-text" target="_blank" href="https://flatuicolors.com/">Flat UI Colors</a></li>
+						<li><a id="link-Font-Awesome" class="teal-text text-darken-3" target="_blank" href="http://fontawesome.io/">Font Awesome</a></li>
+						<li><a id="link-Google-Fonts" class="brown-text" target="_blank" href="https://fonts.google.com/">Google Fonts</a></li>
+						<li><a id="link-Materialize" class="red-text text-lighten-1" target="_blank" href="http://materializecss.com/">Materialize</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div id="footer-copyright-text" class="container">
+				© 2017 Thomas Sapelza
+				<a id="link-My-Email" class="white-text right" target="_blank" href="mailto:sapelza.thomas@gmail.com">Mail me</a>
+			</div>
+		</div>
+	</footer>
 </html>
-<!--
-
-    [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
-    [::::::::::::::      ::::::::::::::]
-    [::::::::::::::      ::::::::::::::]
-    [::::::[[[[[[[:      :]]]]]]]::::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[     CODE THE WEB     ]:::::]
-    [:::::[  http://brackets.io  ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [::::::[[[[[[[:      :]]]]]]]::::::]
-    [::::::::::::::      ::::::::::::::]
-    [::::::::::::::      ::::::::::::::]
-    [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
-
--->

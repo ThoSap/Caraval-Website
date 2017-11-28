@@ -1,0 +1,3 @@
+Die Webseite wurde mehrmals optisch und auch "mechanisch" von Mitschülern und meiner Familie auf bugs und design flaws getestet.
+
+Geschätzter aufwand des Testens: 5h
