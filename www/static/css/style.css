@@ -4,7 +4,7 @@ html {
 	height: 100%;
 	width: 100%;
 	-ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%
+	-webkit-text-size-adjust: 100%
 }
 
 /* Normalize */
@@ -13,37 +13,37 @@ html {
 }
 
 article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
-    display: block
+	display: block
 }
 
 a {
-    background-color: transparent;
-    -webkit-text-decoration-skip: objects
+	background-color: transparent;
+	-webkit-text-decoration-skip: objects
 }
 
 h1 {
 	
-    font-size: 36px
+	font-size: 36px
 }
 
 h2 {
-    font-size: 30px
+	font-size: 30px
 }
 
 h3 {
-    font-size: 24px
+	font-size: 24px
 }
 
 h4 {
-    font-size: 20px
+	font-size: 20px
 }
 
 h5 {
-    font-size: 18px
+	font-size: 18px
 }
 
 h6 {
-    font-size: 16px
+	font-size: 16px
 }
 
 body {
@@ -1314,7 +1314,7 @@ header a.caraval .star.star-15 {
 	display: block;
 	border-radius: 15px;
 	margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
 }
 
 #section_reviews .slider-content {
